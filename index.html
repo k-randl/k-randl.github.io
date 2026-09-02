@@ -1,0 +1,199 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korbinian Randl — Machine Learning &amp; NLP research</title>
+<meta name="description" content="Korbinian Randl, PhD student in Machine Learning and Natural Language Processing at Stockholm University. Research on explainability and trustworthiness of large language models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside>
+    <div>
+      <div class="id-block">
+        <img class="portrait" src="img/portrait.jpg" alt="Portrait of Korbinian Randl">
+        <h1>Korbinian Randl</h1>
+        <p class="role">PhD student, Machine Learning &amp; NLP<br>Dept. of Computer and Systems Sciences<br>Stockholm University</p>
+      </div>
+      <nav class="side-nav" aria-label="Section navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="side-links">
+      <a href="https://scholar.google.com/citations?hl=en&user=jhUVkX4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://se.linkedin.com/in/korbinian-randl-b1210a242" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/0000-0002-7938-2747" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://www.su.se/english/profiles/k/kora8563" target="_blank" rel="noopener">University profile</a>
+    </div>
+  </aside>
+
+  <main>
+
+    <section class="hero" aria-label="Introduction">
+      <h2 class="kicker">Explainability &amp; trustworthiness of language models</h2>
+      <p class="statement">I study why models say what they say, and whether we can
+        <span class="mark">trust the explanation<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4,12 C 80,18 220,18 296,10"/></svg></span>.
+      </p>
+      <p class="sub">My PhD research develops methods to test and improve the trustworthiness
+        of large language models such as GPT and Llama with a particular focus on whether
+        the explanations these models give for their own predictions actually hold up.</p>
+    </section>
+
+    <section id="about" aria-label="About">
+      <h2>About</h2>
+      <div class="prose">
+        <p>I'm a PhD student in Machine Learning and Natural Language Processing at the
+          Department of Computer and Systems Sciences, Stockholm University. I'm part of
+          the Data Science Research Group and the Natural Language Processing Research Group.</p>
+        <p>Before starting my PhD, I completed a Master's in Artificial Intelligence at
+          Stockholm University and a Master's in Electrical Engineering and Information
+          Technology at the Technical University of Munich. I also worked eight years as
+          an electrical engineer specializing in automation technology.</p>
+        <p>Beyond my core research, I'm interested in the application of information
+          technology to biology and in projects that serve the social good.</p>
+      </div>
+    </section>
+
+    <section id="research" aria-label="Research focus">
+      <h2>Research focus</h2>
+      <div class="focus-list">
+        <div class="focus-item">
+          <h3>Explainability &amp; interpretability</h3>
+          <p>Broader work on making machine learning predictions legible to the people who
+            rely on them. One strand of this looks at self-explanations: when a language
+            model is asked to explain its own output, is that explanation actually faithful
+            to how the model arrived at its prediction, or just plausible-sounding? My
+            findings suggest faithfulness is not guaranteed.</p>
+        </div>
+        <div class="focus-item">
+          <h3>More trustworthy prompting methods</h3>
+          <p>Work on making prompting pipelines principled rather than trial-and-error.
+            RAG-E makes retrieval-augmented generation more transparent, using attribution
+            methods to audit whether a generator's answer actually draws on the documents
+            its retriever ranked as most relevant, exposing failure modes that per-component
+            metrics miss.
+            CICLe uses conformal prediction to decide, case by case, which classification
+            queries a large language model can be trusted to answer directly and which need
+            a fallback.</p>
+        </div>
+        <div class="focus-item">
+          <h3>Applied ML &amp; NLP</h3>
+          <p>Applying these methods to real domains: food-safety hazard detection from
+            incident reports, automotive fault detection from technician notes, and
+            clinical data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" aria-label="Publications">
+      <h2>Publications</h2>
+      <ul class="pub-list">
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://doi.org/10.48550/arXiv.2601.21803" target="_blank" rel="noopener">Quantifying Retriever-Generator Alignment in RAG with Local Explanations</a></span>
+          <span class="pub-meta">K. Randl, G. Rocchietti, A. Henriksson, Z. Abedjan, T. Lindgren, J. Pavlopoulos — EMNLP Findings, 2026 · <a href="https://github.com/k-randl/Interpretable_RAG" target="_blank" rel="noopener">Code</a></span>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://doi.org/10.1007/s10994-025-06838-6" target="_blank" rel="noopener">Mind the gap: from plausible to valid self-explanations in large language models</a></span>
+          <span class="pub-meta">K. Randl, J. Pavlopoulos, A. Henriksson, T. Lindgren — Machine Learning, 2025 · <a href="https://github.com/k-randl/self-explaining_llms" target="_blank" rel="noopener">Code</a></span>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://doi.org/10.48550/arXiv.2407.14487" target="_blank" rel="noopener">Evaluating the reliability of self-explanations in large language models</a></span>
+          <span class="pub-meta">K. Randl, J. Pavlopoulos, A. Henriksson, T. Lindgren — Discovery Science, 2024 · <a href="https://github.com/k-randl/self-explaining_llms" target="_blank" rel="noopener">Code</a></span>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://aclanthology.org/2024.findings-acl.459/" target="_blank" rel="noopener">CICLe: conformal in-context learning for large-scale multi-class food risk classification</a></span>
+          <span class="pub-meta">K. Randl, J. Pavlopoulos, A. Henriksson, T. Lindgren — ACL Findings, 2024 · <a href="https://github.com/k-randl/conformal_prompting" target="_blank" rel="noopener">Code</a></span>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://arxiv.org/abs/2503.19800" target="_blank" rel="noopener">SemEval-2025 Task 9: the food hazard detection challenge</a></span>
+          <span class="pub-meta">K. Randl, J. Pavlopoulos, A. Henriksson, T. Lindgren, J. Bakagianni — SemEval workshop, 2025 · <a href="https://github.com/food-hazard-detection-semeval-2025/food-hazard-detection-semeval-2025.github.io" target="_blank" rel="noopener">Task</a></span>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-title"><a href="https://arxiv.org/abs/2212.00554" target="_blank" rel="noopener">Early prediction of the risk of ICU mortality with deep federated learning</a></span>
+          <span class="pub-meta">K. Randl, N. Lladós Armengol, L. Mondrejevski, I. Miliou — IEEE CBMS, 2023</span>
+        </li>
+
+      </ul>
+      <p class="pub-note">See the
+        <a href="https://scholar.google.com/citations?hl=en&user=jhUVkX4AAAAJ" target="_blank" rel="noopener">full profile</a> for an up-to-date list.</p>
+    </section>
+
+    <section id="blog" aria-label="Blog">
+      <h2>Blog</h2>
+      {% if site.posts.size > 0 %}
+      <ul class="pub-list">
+        {% for post in site.posts %}
+        <li class="pub-item">
+          <span class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+          <span class="pub-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.excerpt %} — {{ post.excerpt | strip_html | truncatewords: 22 }}{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="pub-note">No posts yet — check back soon.</p>
+      {% endif %}
+    </section>
+
+    <section id="teaching" aria-label="Teaching">
+      <h2>Teaching</h2>
+      <ul class="teach-list">
+        <li class="teach-item">
+          <span class="teach-name">Machine Learning</span>
+          <span class="teach-role">Lecturer &amp; course assistant · since spring 2024</span>
+        </li>
+        <li class="teach-item">
+          <span class="teach-name">Introduction to Programming</span>
+          <span class="teach-role">Lecturer &amp; course assistant · since fall 2024</span>
+        </li>
+        <li class="teach-item">
+          <span class="teach-name">Project management &amp; tools for health informatics</span>
+          <span class="teach-role">Lecturer &amp; course assistant · since fall 2024</span>
+        </li>
+        <li class="teach-item">
+          <span class="teach-name">Principles and Foundations of AI</span>
+          <span class="teach-role">Administration, lecturer &amp; course assistant · fall 2023</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <a href="mailto:korbinian.randl@dsv.su.se">korbinian.randl@dsv.su.se</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=jhUVkX4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://se.linkedin.com/in/korbinian-randl-b1210a242" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-7938-2747" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Korbinian Randl · Department of Computer and Systems Sciences, Stockholm University<br>
+  Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>
+</footer>
+
+</body>
+</html>

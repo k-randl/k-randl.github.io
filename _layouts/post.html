@@ -1,0 +1,37 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Korbinian Randl</title>
+<meta name="description" content="{{ page.excerpt | strip_html | truncatewords: 30 | default: site.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+<div class="post-page">
+  <a class="post-back" href="{{ '/' | relative_url }}#blog">&larr; Back to blog</a>
+
+  <article>
+    <header class="post-header">
+      <h1>{{ page.title }}</h1>
+      <p class="post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    </header>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </article>
+
+  <footer>
+    Korbinian Randl · Department of Computer and Systems Sciences, Stockholm University<br>
+    Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a>
+  </footer>
+</div>
+
+</body>
+</html>

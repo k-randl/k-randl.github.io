@@ -1,0 +1,6 @@
+title: Korbinian Randl
+description: >-
+  Korbinian Randl, PhD student in Machine Learning and Natural Language
+  Processing at Stockholm University.
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
