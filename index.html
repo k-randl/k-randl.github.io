@@ -28,9 +28,9 @@
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#publications">Publications</a></li>
-          <li><a href="#blog">Blog</a></li>
           <li><a href="#teaching">Teaching</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
     </div>
@@ -139,22 +139,6 @@
         <a href="https://scholar.google.com/citations?hl=en&user=jhUVkX4AAAAJ" target="_blank" rel="noopener">full profile</a> for an up-to-date list.</p>
     </section>
 
-    <section id="blog" aria-label="Blog">
-      <h2>Blog</h2>
-      {% if site.posts.size > 0 %}
-      <ul class="pub-list">
-        {% for post in site.posts %}
-        <li class="pub-item">
-          <span class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
-          <span class="pub-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.excerpt %} — {{ post.excerpt | strip_html | truncatewords: 22 }}{% endif %}</span>
-        </li>
-        {% endfor %}
-      </ul>
-      {% else %}
-      <p class="pub-note">No posts yet — check back soon.</p>
-      {% endif %}
-    </section>
-
     <section id="teaching" aria-label="Teaching">
       <h2>Teaching</h2>
       <ul class="teach-list">
@@ -185,6 +169,22 @@
         <a href="https://se.linkedin.com/in/korbinian-randl-b1210a242" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-7938-2747" target="_blank" rel="noopener">ORCID</a>
       </div>
+    </section>
+
+    <section id="blog" aria-label="Blog">
+      <h2>Blog</h2>
+      {% if site.posts.size > 0 %}
+      <ul class="pub-list">
+        {% for post in site.posts %}
+        <li class="pub-item">
+          <span class="pub-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+          <span class="pub-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.excerpt %} — {{ post.excerpt | strip_html | truncatewords: 22 }}{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="pub-note">No posts yet — check back soon.</p>
+      {% endif %}
     </section>
 
   </main>
