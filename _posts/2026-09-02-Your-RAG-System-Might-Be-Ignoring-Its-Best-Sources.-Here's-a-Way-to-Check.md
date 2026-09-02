@@ -17,9 +17,9 @@ Most existing explainability tools look at one of these components in isolation.
 
 That gap matters. If important documents are routinely ignored, retrieval effort is being wasted. More importantly, users lose confidence that answers are grounded in your strongest evidence rather than a less relevant source that happened to catch the model's attention.
 
-## ![RAG-E overview][https://k-randl.github.io/img/posts/2026-09-02-image1.png]
+## ![RAG-E overview](https://k-randl.github.io/img/posts/2026-09-02-image1.png)
 
-RAG-E overview. We detect important spans influencing both the retrieval and generation steps. **(a):** Visual example of RAG-E’s explanations (generated using Arctic Embed 2 and Llama). **(b):** Explanations are based on integrated gradients (**\- \-**) for the retriever and SHAP for the generator (**\- \-**).
+RAG-E overview. We detect important spans influencing both the retrieval and generation steps. **(a):** Visual example of RAG-E’s explanations (generated using Arctic Embed 2 and Llama). **(b):** Explanations are based on integrated gradients for the retriever and SHAP for the generator.
 
 ## What RAG-E provides
 
